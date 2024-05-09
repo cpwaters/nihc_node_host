@@ -17,6 +17,26 @@ app.get("/", function (req, res) {
 app.get("/league-statistics", function (req, res) {
   res.render("stats");
 });
+
+app.get("/scores", function (req, res) {
+  res.render("scores");
+});
+
+app.get("/schedule", function (req, res) {
+  res.render("schedule");
+});
+
+app.get("/standings", function (req, res) {
+  res.render("standings");
+});
+
+app.get("/players", function (req, res) {
+  res.render("players");
+});
+
+app.get("/goalies", function (req, res) {
+  res.render("goalies");
+});
 // need try catch
 app.listen(port, function () {
   console.log(`app on port ${port}`);
