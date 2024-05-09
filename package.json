@@ -1,0 +1,17 @@
+{
+  "name": "nihc_node_host",
+  "version": "1.0.0",
+  "description": "host single page for Gamesheet iframe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "C.Waters/Gamesheet",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
