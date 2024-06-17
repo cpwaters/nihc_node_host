@@ -9,9 +9,15 @@ app.use(cors());
 // View engine setup
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "./static")));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
   res.render("index");
+});
+
+app.get("/contact", function (req, res) {
+  res.render("contact");
 });
 
 app.get("/league-statistics", function (req, res) {
@@ -26,21 +32,18 @@ app.get("/bracket-2", function (req, res) {
   res.render("bracket-2");
 });
 
-// app.get("/standings", function (req, res) {
+// app.use("/standings", function (req, res) {
 //   res.render("standings");
 // });
 
-// app.get("/players", function (req, res) {
+// app.use("/players", function (req, res) {
 //   res.render("players");
 // });
 
-// app.get("/goalies", function (req, res) {
+// app.use("/goalies", function (req, res) {
 //   res.render("goalies");
 // });
 
-app.get("/contact", function (req, res) {
-  res.render("contact");
-});
 // need try catch
 app.listen(port, function () {
   console.log(`app on port ${port}`);
