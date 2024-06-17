@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | National Ice Hockey Cup</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(bg1.jpg);
+      }
+      .main-img {
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+      }
+      .contact-info {
+        color: #fff;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 50px auto;
+        text-align: center;
+      }
+      a {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('partials/nav.ejs') %>
+    <img class="main-img" src="cuplogo.png" alt="league badge" />
+    <div class="contact-info">
+      <p>
+        Paul Garvin<br />
+        NIHC Club Founder
+      </p>
+      <a href="mailto:nihcleague@gmail.com">nihcleague@gmail.com</a>
+    </div>
+  </body>
+</html>

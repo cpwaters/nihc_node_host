@@ -18,12 +18,12 @@ app.get("/league-statistics", function (req, res) {
   res.render("stats");
 });
 
-app.get("/scores", function (req, res) {
-  res.render("scores");
+app.get("/bracket-1", function (req, res) {
+  res.render("bracket-1");
 });
 
-app.get("/schedule", function (req, res) {
-  res.render("schedule");
+app.get("/bracket-2", function (req, res) {
+  res.render("bracket-2");
 });
 
 app.get("/standings", function (req, res) {
@@ -36,6 +36,10 @@ app.get("/players", function (req, res) {
 
 app.get("/goalies", function (req, res) {
   res.render("goalies");
+});
+
+app.get("/contact", function (req, res) {
+  res.render("contact");
 });
 // need try catch
 app.listen(port, function () {
