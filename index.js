@@ -26,17 +26,17 @@ app.get("/bracket-2", function (req, res) {
   res.render("bracket-2");
 });
 
-app.get("/standings", function (req, res) {
-  res.render("standings");
-});
+// app.get("/standings", function (req, res) {
+//   res.render("standings");
+// });
 
-app.get("/players", function (req, res) {
-  res.render("players");
-});
+// app.get("/players", function (req, res) {
+//   res.render("players");
+// });
 
-app.get("/goalies", function (req, res) {
-  res.render("goalies");
-});
+// app.get("/goalies", function (req, res) {
+//   res.render("goalies");
+// });
 
 app.get("/contact", function (req, res) {
   res.render("contact");
